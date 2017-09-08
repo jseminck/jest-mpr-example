@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "jest": {
+    "projects": [
+      "<rootDir>/project1.js",
+      "<rootDir>/project2.js"
+    ]
   },
   "scripts": {
     "test": "jest"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^21.0.2"
+  }
 }
